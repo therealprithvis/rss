@@ -30,6 +30,9 @@ python gen_str.py
 
 ## Deployment
 
+### Deploying on Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FiamLiquidX%2Frss-feed-telegram-bot&plugins=postgresql&envs=API_ID%2CAPI_HASH%2CFEED_URLS%2CBOT_TOKEN%2CLOG_CHANNEL%2CINTERVAL%2CMAX_INSTANCES%2CSTR_SESSION%2CMIRROR_CHAT_ID%2CMIRROR_CMD&API_IDDesc=Get+it+from+my.telegram.org&API_HASHDesc=Get+it+from+my.telegram.org&FEED_URLSDesc=RSS+Feed+URL+of+the+site.+Split+by++%7C++if+there+are+more+than+one.&BOT_TOKENDesc=Get+it+by+creating+a+bot+on+https%3A%2F%2Ft.me%2Fbotfather&LOG_CHANNELDesc=Create+a+channel+%2C+send+a+message+and+forward+that+message+to+%40username_to_id_bot+%2C+you+will+get+channel+id.&INTERVALDesc=Times+between+checks.&MAX_INSTANCESDesc=2-3+is+more+than+enough.&STR_SESSIONDesc=Fill+this+if+you+wanna+setup+autoleech+or+automirror+system.&MIRROR_CHAT_IDDesc=Only+useful+if+u+filled+string+session+variable.+This+will+send+mirror+commands+on+your+behalf+to+the+mentioned+chat+id.&MIRROR_CMDDesc=Mirror+command+of+your+bot.)
+
 ### Deploying on Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
