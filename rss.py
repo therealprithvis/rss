@@ -69,7 +69,10 @@ def create_feed_checker(feed_url):
         if last_id_from_db == "*":
             message = f"**{first_entry.title}**\n```{first_entry.link}```"
             try:
-                app.send_message(log_channel, message)
+                if "TombDoc" in first_entry.link or "Galaxy" in first_entry.link:
+                    app.send_message(log_channel, message)
+                else:
+                    print(f"{first_entry.link}: >>skipped<<")
                 if app2 is not None:
                     mirr_msg = f"{mirr_cmd} {first_entry.link}"
                     app2.send_message(mirr_chat, mirr_msg)
@@ -93,7 +96,10 @@ def create_feed_checker(feed_url):
             # ↓ Edit this message as your needs.
             message = f"**{entry.title}**\n```{entry.link}```"
             try:
-                app.send_message(log_channel, message)
+                if "1080p" in entry.link or "2160p" in entry.link or "psa" in entry.link:
+                    app.send_message(log_channel, message)
+                else:
+                    print(f"{entry.link}: >>skipped<<")
                 if app2 is not None:
                     mirr_msg = f"{mirr_cmd} {entry.link}"
                     app2.send_message(mirr_chat, mirr_msg)
